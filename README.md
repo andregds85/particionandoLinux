@@ -1,0 +1,2 @@
+# particionandoLinux
+particionandoLinux
