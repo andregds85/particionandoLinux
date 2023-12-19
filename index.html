@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particionando uma Instalação do Linux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+     .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 800px;
+
+    }
+
+    .card {
+      width: calc(33.33% - 20px);
+      margin: 10px 0;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      color: #666;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 12px;
+      margin-top: 10px;
+      text-decoration: none;
+      background-color: #3498db;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
+
+        header {
+            background-color:  #666;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            background-image: url("img/fundo.jpg");
+
+        }
+
+        h2{
+            color: tomato;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        nav {
+            background-color:  #666;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        section:nth-child(odd) {
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            background-color: #666;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            background-image: url("img/fundo.jpg");
+
+        }
+    </style>
+</head>
+<body>
+         
+            <header>
+            <h1>Particionando uma Instalação Linux </h1>
+            </header>
+                
+            <nav>
+            <a href="#swap">Swap</a>
+            <a href="#boot">boot</a>
+            <a href="#bootefi">boot / efi </a>
+            <a href="#home">Home </a>
+            <a href="#raiz">Raiz </a>
+            </nav>
+    
+            <section id="swap">
+            <h2>Swap</h2>
+            <p>Este tipo de partição é usado para oferecer o suporte a memória virtual ao GNU/Linux em </p> 
+            <p>adição a memória RAM instalada no sistema. Este tipo de partição é identificado pelo tipo 82 nos </p>
+            <p> programas de particionamento de disco para Linux.</p>
+            <p><img src="img/1.jpg"></p>
+            </section>
+
+            <section id="boot">
+            <h2>Boot</h2>
+            <p>A partição montada em /boot/ contém o kernel do sistema operacional (o que permite que o seu sistema</p>
+            <p>>inicialize o Red Hat Enterprise Linux), assim como os arquivos usados durante o processo de bootstrap.</p>
+            <p>Para a maioria dos usuários, uma partição de inicialização de 500 MB é suficiente.</p> 
+            <p><img src="img/2.jpg"></p>
+            </section>
+
+            <section id="bootefi">
+            <h2>Boot / efi</h2>
+            <p>A partição de sistema EFI (em inglês EFI system partition, abreviado como ESP) é uma partição</p>
+            <p>independente do sistema operacional que atua como o local de armazenamento para os gerenciadores de boot,</p>
+            <p>aplicativos e drivers EFI a serem lançados pelo firmware UEFI. É obrigatório para a inicialização do UEFI.</p>
+            <p><img src="img/3.jpg"></p>
+            </section>
+
+            <section id="home">
+            <h2>Home</h2>
+            <p> No Linux, o diretório /home é utilizado para armazenar dados dos usuários e suas preferências. Esse diretório</p>
+            <p>contém um subdiretório para cada conta de usuário.</p>
+            <p><img src="img/4.jpg"></p>
+            </section>
+
+            
+            <section id="raiz">
+            <h2>/ - Diretório Root</h2>
+            <p>Como o nome indica este é o diretório raiz do seu sistema Linux. É aqui que encontrará todos os restantes diretórios</p>
+            <p>e todos os dados que se encontram em seu sistema. Até mesmo um CD/DVD, disco externo ou qualquer outro periférico se encontra</p>
+            <p> dentro da raiz do sistema.</p>
+            <p><img src="img/4.jpg"></p>
+            </section>
+
+
+            <footer>
+            &copy; Particionando uma Instalação do Linux.
+            </footer>
+          </body>
+          </html>
